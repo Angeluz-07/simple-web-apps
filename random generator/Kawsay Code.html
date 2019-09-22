@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://kawsaycode.byethost11.com/?i=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">		
+	 <link rel="stylesheet" href="./Kawsay Code_files/Index.css">
+         <meta name="description" content="Genera números aleatorios al instante con una interfaz elegante">
+          
+	 <link rel="icon" type="image/png" href="http://kawsaycode.byethost11.com/nature-icon-37192.png">
+	 <title>Kawsay Code</title>	 
+ </head>	 
+ <body>
+	 <header id="title">Kawsay Code</header>
+	 <div class="flex-container"> 		 		 
+		 <div class="box program">
+			<form id="programForm">	
+			<div class="app top">
+				<p>Resultado:</p>								
+				<textarea id="result" rows="4"></textarea>										
+				<button>Generar</button>
+			</div>	
+			
+			<div class="app data">					
+				<div class="programDataElement">
+					<input type="number" name="minimum" min="1" max="999999" value="1" required="">
+					<input type="number" name="maximum" min="1" max="1000000" value="21" required="">
+				</div>
+				
+				<div class="programDataElement">
+					<p class="appText">min</p>
+					<p class="appText">max</p>
+				</div>
+				
+				<div class="programDataElement">
+					<input type="number" name="quantity" min="1" value="17" required="">					
+					<p class="appText" id="quantityLabel">valores</p>
+				</div>					
+			</div>
+			</form>
+			
+			<div class="app info">
+					<p id="appInfoText">
+					Este programa genera números aleatorios entre un mínimo y un máximo. Límites incluidos.
+					</p>
+			</div>
+		 </div>
+	 </div>		
+	 
+	 <script>
+		var programForm = document.getElementById("programForm");
+		
+		programForm.onsubmit= function(e){
+			e.preventDefault();
+			var quantity=parseInt(this.quantity.value);
+			var min=parseInt(this.minimum.value);
+			var max=parseInt(this.maximum.value);
+                        var d = new Date();
+			
+
+			if(min>max){
+				alert("El m\xednimo debe ser menor que el m\xe1ximo.");	
+			}else{			
+				this.result.value="";
+				for(i=0;i<quantity;i++){
+					this.result.value+= getRandomValue(min,max)+"  ";					
+				}
+			
+				var ajaxRequest= new XMLHttpRequest();											
+				//encode the data to be sent to the .php			
+                                var data="date="+d.toLocaleString()+"&min="+min+"&max="+max+"&quantity="+quantity+"&values="+this.result.value;						
+				//open and send the request
+				ajaxRequest.open("POST","programProcess.php");			
+				ajaxRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				ajaxRequest.send(data);			
+				
+			}
+		}
+		
+		programForm.quantity.onkeyup=function(e){
+			if(parseInt(this.value)==1){
+				document.getElementById("quantityLabel").innerHTML="valor";
+			}
+			else{
+				document.getElementById("quantityLabel").innerHTML="valores";
+			}
+		}
+		
+		
+	 
+		 function getRandomValue(min, max) {
+			return Math.floor(Math.random() * (max - min + 1) ) + min;
+		 }		 
+			
+	 </script>
+	 
+ 
+					</body></html>

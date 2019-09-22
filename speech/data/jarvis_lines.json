@@ -1,0 +1,25 @@
+{
+	"_info": "lang and rate are to be used with synthesis web speech api.",
+	"lang" : "en-GB",
+	"rate" : 0.9,
+	"dialogues" : [
+		{
+			"title" : "Greetings",
+			"lines" :[
+				"Welcome Mr. Stark.",				
+				"Working on a secret project, are we, sir?",				
+				"I am always here for you, sir.",
+				"As always sir, a great pleasure watching you work.",
+				"The House Party Protocol, sir?"
+			]
+		},
+		{
+			"title" : "Messages",
+			"lines" :[
+				"Dr. Banner called.",
+				"Mark 43 is ready, sir." ,				
+				"I am afraid my protocols are failing, sir."
+			]
+		}
+	]
+}

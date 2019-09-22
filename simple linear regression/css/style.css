@@ -1,0 +1,24 @@
+.stacked {
+	display: flex;
+	justify-content: center;
+	align-items: center;		 
+	flex-direction: column;
+}
+#header{
+	 padding:2% 0%;/*set padding above and none in sides*/			 
+	 
+	 color:white;
+	 background-color:purple;			 
+}
+
+#main_content {			
+	margin: 2% 15%;/*set margin above and below*/		
+}
+
+#div_plot{
+	margin: 2% 0%;
+}
+		
+#button_predict{
+	width:100%;
+}

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: nautik;
+    src: url(fonts/Nautik-Black.otf);
+}
+
+body{
+	background-color:white;
+	margin:0px;
+	/*this is for images background-size: cover;*/
+}
+
+header{
+	background-color:black;
+	font-family:nautik;
+	margin:0px;
+	color:white;
+	padding-left:20px;
+	font-size:170%;
+}
+
+p{
+	//border: 1px solid blue;
+	font-family:nautik;
+	color:black;
+	margin:0px;
+	font-size:180%;
+}
+
+.flex-container {
+    display: flex;
+	
+	flex-direction:column;	
+	
+    align-items: center;
+	flex-wrap:wrap;
+	
+	margin:0px;
+}
+
+.box {	
+    width: 340px;
+	
+	margin:10px;
+	padding:10px;
+	
+	border-width:2px;
+	border-style:solid;
+	border-color:gray;
+	border-radius:15px;	
+	
+	background: linear-gradient(to bottom, #F7F5F6, #DDDDDD);
+	border:1px solid #CCCCCC;
+}
+	/*box program*/
+	.program{
+		display: flex;		
+		flex-direction: column;
+	}	
+		.app{
+			display:flex;
+			//border: 2px solid red;			
+			flex-direction:column;
+		}
+			.top{
+					
+			}			
+				#result{
+					resize:none;
+					margin-left:45px;
+					margin-right:45px;
+					font-size:150%;
+				}
+			
+			.programDataElement{
+				//border: 1px solid pink;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				padding:2px;
+				margin-left:80px;
+				margin-right:80px;
+			}
+				input{
+					width:70px;
+					font-size:120%;
+				}
+								
+				.appText{
+					font-size:140%;					
+				}
+			.info{
+				/*the line below gets the content inside the div*/
+				display:block;
+				border-top: 1px solid #CCCCCC;
+				margin-top:2px;
+				margin-left:10px;
+				margin-right:10px;
+				padding-top:2px;
+				text-align:center;
+			}
+				#appInfoText{
+					font-size:115%;
+				}
+		
+
+button{
+	border:1px solid #393B3E;
+	outline:none;
+	background-image: linear-gradient(to bottom, #515459, #3B3C40);
+	font-family:nautik;
+	width:auto;
+	color: white;
+    padding: 5px;
+	margin:5px 70px 15px 70px;
+	border-radius: 5px;
+    cursor: pointer;
+	font-size:200%;
+	transition: 0.1s;	
+}
+
+button:hover {	
+	border:1px solid #393B3E;
+	background-image: linear-gradient(to bottom, #3B3C40, #202124);
+}
+
+button:active {		
+	background-image: linear-gradient(to top, #3B3C40, #202124);	
+}
