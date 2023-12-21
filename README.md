@@ -1,5 +1,5 @@
 ## Simple Web Apps
-Static web apps made for fun. Some of them are migrations of old web apps I built when I was starting in web development.
+Static web apps made for fun and learning. Some of them are migrations of old web apps I built when I was starting in web development.
 
 ## Check out the sites
 - [Poesis](https://raw.githack.com/Angeluz-07/simple-web-apps/master/poesis/poesis.html)
