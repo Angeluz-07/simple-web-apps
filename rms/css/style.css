@@ -13,7 +13,8 @@
     /*set padding above and none in sides*/
 
     color: black;
-    background-color: #aacaff;
+    border-width: 1px;
+    border-style: solid;
 
 }
 
