@@ -7,5 +7,6 @@ Static web apps made for fun and learning. Some of them are migrations of old we
 - [Simple Linear Regression](https://raw.githack.com/Angeluz-07/simple-web-apps/master/simple%20linear%20regression/simple_linear_regression.html)
 - [Web Speech API demo](https://raw.githack.com/Angeluz-07/simple-web-apps/master/speech/speech.html)
 - [RMS Stock Calculator](https://raw.githack.com/Angeluz-07/simple-web-apps/master/rms/stock.html)
+- [Csv to datatable](https://raw.githack.com/Angeluz-07/simple-web-apps/master/csv to table/index.html)
 
 I am serving the sites from github with [raw.githack.com](https://raw.githack.com/)

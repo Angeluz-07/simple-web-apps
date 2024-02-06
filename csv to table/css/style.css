@@ -1,0 +1,24 @@
+/*
+ This is a custom class to 'stack' elements vertically and centered.
+*/
+.stacked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    padding: 2% 0%;
+    /*set padding above and none in sides*/
+
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+#main_content {
+    margin: 0% 8%;
+    /*set margin above and below*/
+}
